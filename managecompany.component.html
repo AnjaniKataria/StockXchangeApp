@@ -1,0 +1,26 @@
+
+
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th>company_name</th>
+        <th>sector_name</th>
+        <th>brief_wrireup</th>
+        <th>Options</th>
+
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let dataItem of CompanyList">
+        <td>{{dataItem.company_name}}</td>   
+        <td>{{dataItem.sector_name}}</td>
+        <td>{{dataItem.brief_writeup}}</td>
+        <td>
+            <button type="button" class="btn btn-light mr-1">
+                Edit
+            </button>
+        </td>
+    </tr>
+</tbody>
+
+</table>
